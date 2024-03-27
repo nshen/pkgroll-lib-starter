@@ -1,0 +1,39 @@
+{
+  "name": "pkgroll-lib-starter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "pkgroll",
+    "test": "vitest"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "typescript",
+    "starter",
+    "library"
+  ],
+  "author": "nshen",
+  "license": "MIT",
+  "devDependencies": {
+    "pkgroll": "^2.0.2",
+    "tsx": "^4.7.1",
+    "vitest": "^1.4.0"
+  }
+}
